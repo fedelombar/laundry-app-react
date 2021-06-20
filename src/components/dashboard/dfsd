@@ -1,0 +1,85 @@
+  <Stack>
+      <Box>
+        <Text fontSize="4xl" textAlign="center" py="10">
+          Which service(s) do you need?
+        </Text>
+
+        <Flex my="8" justify="center" wrap="wrap">
+          <NavLink exact to="/wash">
+            <Flex
+              _hover={{ bg: "teal.400" }}
+              flexDirection="column"
+              bg="indigo.200"
+              border="2px solid"
+              borderColor="gray.400"
+              mx="4"
+              p="10"
+              w="sm"
+              rounded="lg"
+              align="center"
+            >
+              <Washing />
+              <Text
+                mt="6"
+                textAlign="center"
+                color="black"
+                fontSize="xl"
+                _hover={{ fontWeight: "bold" }}
+              >
+                Wash & Fold
+              </Text>
+            </Flex>
+          </NavLink>
+          <NavLink exact to="/dry">
+            <Flex
+              _hover={{ bg: "teal.400" }}
+              flexDirection="column"
+              bg="indigo.200"
+              border="2px solid"
+              borderColor="gray.400"
+              mx="4"
+              p="10"
+              w="sm"
+              rounded="lg"
+              align="center"
+            >
+              <DryCleaning className="DryCss" />
+              <Text
+                mt="6"
+                textAlign="center"
+                color="black"
+                fontSize="xl"
+                _hover={{ fontWeight: "bold" }}
+              >
+                Dry Cleaning
+              </Text>
+            </Flex>
+          </NavLink>
+          <NavLink exact to="/tailoring">
+            <Flex
+              _hover={{ bg: "teal.400" }}
+              flexDirection="column"
+              bg="indigo.200"
+              border="2px solid"
+              borderColor="gray.400"
+              mx="4"
+              p="10"
+              w="sm"
+              rounded="lg"
+              align="center"
+            >
+              <Tailoring />
+              <Text
+                mt="6"
+                textAlign="center"
+                color="black"
+                fontSize="xl"
+                _hover={{ fontWeight: "bold" }}
+              >
+                Tailoring
+              </Text>
+            </Flex>
+          </NavLink>
+        </Flex>
+      </Box>
+    </Stack>
