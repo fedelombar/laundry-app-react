@@ -1,11 +1,14 @@
 import React from "react";
-import { Box, Text, Heading } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
+import DryCleaning from "../Icons/DryCleaning";
 
 function DryCard() {
   return (
     <Box
-      maxW="sm"
+      w="100%"
+      h="150px"
+      align="center"
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
@@ -13,11 +16,15 @@ function DryCard() {
     >
       <NavLink exact to="/dry">
         <Box m="5" as="a">
-          <Heading m="5" mb="0" as="h4" size="md">
-            Blog Post
-          </Heading>
-          <Text m="5" mt="0">
-            My cool blog post
+          <DryCleaning />
+          <Text
+            m="5"
+            mt="0"
+            textAlign="center"
+            fontSize={{ base: "14px", md: "15px", lg: "20px" }}
+            _hover={{ fontWeight: "bold" }}
+          >
+            Dry Cleaning
           </Text>
         </Box>
       </NavLink>
